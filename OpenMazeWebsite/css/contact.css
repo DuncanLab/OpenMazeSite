@@ -1,0 +1,34 @@
+.containerPadding{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.card-contact{
+    color: #fff;
+    height: 37.2rem;
+    background: #1A237E center no-repeat;
+    background-size: cover;
+}
+.card-img-bottom {
+    color: #fff;
+    height: 37.2rem;
+    background: #1A237E center no-repeat;
+    background-size: cover;
+}
+
+a i.fab { text-decoration: none; color:white; }
+
+.card-team-img-bottom {
+    color: #fff;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 35%;
+    left:40%;
+    transform: translate(-40%,-35%);
+}

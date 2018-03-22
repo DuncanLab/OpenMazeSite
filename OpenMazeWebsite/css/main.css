@@ -1,0 +1,79 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 160px;
+    width: 100%;
+}
+.stickyFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 160px;
+}
+.footerContent{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Video Carousel */
+.video-carousel{
+    max-height: 400px;
+}
+
+/*Features*/
+
+.keyFeaturesMargin{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.keyFeaturesContainer{
+    margin-bottom: 20px;
+}
+
+.keyFeaturesContainerMargin{
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.keyFeaturesListMargin{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.featuresListBottom{
+    margin-bottom: 10px
+}
+
+.worksBottom{
+    margin-bottom: 250px;
+}
+
+/*get started*/
+.card-img-bottom1{
+    max-height: 200px;
+    color: #fff;
+    height: 20rem;
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg") center no-repeat;
+    background-size: cover;
+}
+.card-img-bottom2{
+    max-height: 200px;
+    color: #fff;
+    height: 20rem;
+    background: url("https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg") center no-repeat;
+    background-size: cover;
+}
+.card-img-bottom3{
+    max-height: 200px;
+    color: #fff;
+    height: 20rem;
+    background: url("https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg") center no-repeat;
+    background-size: cover;
+}
