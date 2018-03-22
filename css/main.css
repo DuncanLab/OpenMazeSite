@@ -60,20 +60,26 @@ body {
     max-height: 200px;
     color: #fff;
     height: 20rem;
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg") center no-repeat;
+    background: url(../img/Download.png) center no-repeat;
     background-size: cover;
 }
 .card-img-bottom2{
     max-height: 200px;
     color: #fff;
     height: 20rem;
-    background: url("https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg") center no-repeat;
+    background: url(../img/Tutorials.png) center no-repeat;
     background-size: cover;
 }
 .card-img-bottom3{
     max-height: 200px;
     color: #fff;
     height: 20rem;
-    background: url("https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg") center no-repeat;
+    background: url("../img/DuncanLogo.png") center no-repeat;
     background-size: cover;
+}
+
+.cover{
+    margin-right: -10px;
+    height: 233px;
+    object-fit: fill;
 }
