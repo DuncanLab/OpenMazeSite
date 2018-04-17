@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/tutorial.css">
     <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico'/>
+    <!-- side nav CSS from MDB -->
+    <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116686393-1"></script>
     <script>
@@ -24,7 +26,7 @@
     </script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 <nav class="navbar navbar-expand-lg navbar-light white">
     <a class="navbar-brand" href="#">
         <img src="../img/OM-WebsiteColor.png" height="30" alt="">
@@ -56,202 +58,233 @@
     </div>
 </nav>
 
-<div class="container" style="margin-top: 30px;  margin-bottom: 230px">
-    <h2>Introduction</h2>
-    <hr>
-    <p>The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise. OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise.</p>
-    <div class="card" style="margin-bottom: 20px">
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-9" data-spy="scroll" data-target="#navbar-example3" data-offset="1">
+        <div class="container" style="margin-top: 30px;  margin-bottom: 230px">
+        <h2 id="introduction">Introduction</h2>
+        <hr>
+        <p>The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise. OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise.</p>
+        <div class="card" style="margin-bottom: 20px">
 
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Get Started
-            </div>
-            <div class="card-text">
-               To start using Open Maze software in your experiments you will need:
-                <br><br>
-                <ol>
-                    <li>The Unity Application</li>
-                    <li>Open Maze Software</li>
-                    <li>Sublime Text Editor</li>
-                </ol>
-                <br>
-                <ol>
-                    <li style="font-size: 22px">
-                        <h4>Download and Install Unity</h4>
-                    </li>
-                    <p><a href="https://unity3d.com/get-unity/download" target="_blank">Click Here</a> to redirect to the Unity Download page. Please select which version of Unity you would like and begin the download process. Please note the the personal version of Unity is free but you must pass their terms and conditions to use it. </p>
-
-                    <p>After installing Unity, open up the application and login or create an account.</p>
-                    <li style="font-size: 22px">
-                        <h4>Download and Install Open Maze</h4>
-                    </li>
-                    <p>Navigate to the Open Maze <a href="https://github.com/DuncanLab/OpenMaze/releases" target="_blank">Github</a> release page, where you will download the latest version of Open Maze.</p>
-                    <div class="row">
-                        <div class="col-md-6"><img style="max-width: 100%" src="../img/githubDownload.png"></div>
-                        <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>Click <b>OpenMaze - Beta</b> to download.</p></div>
-                        </div>
-                    </div>
+            <div class="card-body">
+                <div class="card-title" id="getStarted" style="font-size: 25px">
+                    Get Started
+                </div>
+                <div class="card-text">
+                    To start using Open Maze software in your experiments you will need:
+                    <br><br>
+                    <ol>
+                        <li>The Unity Application</li>
+                        <li>Open Maze Software</li>
+                        <li>Sublime Text Editor</li>
+                    </ol>
                     <br>
-                    <p>Once the ZIP file is done downloading, unzip it in an easy to access place on your computer and move on to the final step.</p>
-                    <li style="font-size: 22px;">
-                        <h4>Download and Install Sublime Text</h4>
-                    </li>
-                    <p class="grey-text">Note: If you already have a text editor compatible with .json and .py files then you can skip this step and simply use the editor you are most comfortable with. </p>
-                    <p>Navigate to <a href="https://www.sublimetext.com/3" target="_blank">https://www.sublimetext.com/3 </a> to download a text editor. Select your operating system and then download the text editor. </p>
-                </ol>
-                <br>
-                    <h3>Setting Up Unity with Open Maze</h3>
-                <ol>
-                    <li style="font-size: 14px">
-                        <p>Open Unity</p>
-                    </li>
-                    <li style="font-size: 14px">
-                        <p>If you have not already made an account in Unity, do so now. If you already have login credentials, make sure you are logged in. </p>
-                    </li>
-                    <li style="font-size: 14px">
-                        <p>Once you are logged in you should see a list of projects. If this is your first time logging in, then you will not see this list. If the Open Maze folder is on the display, click to open it from there. If you do not see the Open Maze folder that you downloaded right in front of you, click the <b>Open</b> button at the top right corner of the window to open up a file search window. Navigate to the upzipped, downloaded, Open Maze folder and select it, clicking <b>Open</b> after doing so. </p>
-                    </li>
-                    <div class="row">
-                        <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>If you clicked <b>Open</b> and you see the following (or similar) error message, please press <b>Continue</b>.</p></div>
+                    <ol>
+                        <li style="font-size: 22px">
+                            <h4 id="unity">Download and Install Unity</h4>
+                        </li>
+                        <p><a href="https://unity3d.com/get-unity/download" target="_blank">Click Here</a> to redirect to the Unity Download page. Please select which version of Unity you would like and begin the download process. Please note the the personal version of Unity is free but you must pass their terms and conditions to use it. </p>
+
+                        <p>After installing Unity, open up the application and login or create an account.</p>
+                        <li style="font-size: 22px">
+                            <h4 id="openMaze">Download and Install Open Maze</h4>
+                        </li>
+                        <p>Navigate to the Open Maze <a href="https://github.com/DuncanLab/OpenMaze/releases" target="_blank">Github</a> release page, where you will download the latest version of Open Maze.</p>
+                        <div class="row">
+                            <div class="col-md-6"><img style="max-width: 100%" src="../img/githubDownload.png"></div>
+                            <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>Click <b>OpenMaze - Beta</b> to download.</p></div>
+                            </div>
                         </div>
-                        <div class="col-md-6"><img style="max-width: 80%" src="../img/ErrorUnity.png"></div>
-                    </div>
+                        <br>
+                        <p>Once the ZIP file is done downloading, unzip it in an easy to access place on your computer and move on to the final step.</p>
+                        <li style="font-size: 22px;">
+                            <h4 id="sublime">Download and Install Sublime Text</h4>
+                        </li>
+                        <p class="grey-text">Note: If you already have a text editor compatible with .json and .py files then you can skip this step and simply use the editor you are most comfortable with. </p>
+                        <p>Navigate to <a href="https://www.sublimetext.com/3" target="_blank">https://www.sublimetext.com/3 </a> to download a text editor. Select your operating system and then download the text editor. </p>
+                    </ol>
                     <br>
-                    <p>At this point, the Unity will begin loading the Open Maze software. This may take some time so please be patient with the process. </p>
-                    <div class="row">
-                        <div class="col-md-6"><img style="max-width: 100%" src="../img/unityFirstLoad.png"></div>
-                        <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>You should now have a screen that looks like the one to the left! At this point you are all set up to begin running your experiments! Please Continue scrolling and watch or read our tutorials to find out more about configuring your environments, building your own and discover the endless opportunities of Open Maze!</p></div>
+                    <h3 id="setup">Setting Up Unity with Open Maze</h3>
+                    <ol>
+                        <li style="font-size: 14px">
+                            <p>Open Unity</p>
+                        </li>
+                        <li style="font-size: 14px">
+                            <p>If you have not already made an account in Unity, do so now. If you already have login credentials, make sure you are logged in. </p>
+                        </li>
+                        <li style="font-size: 14px">
+                            <p>Once you are logged in you should see a list of projects. If this is your first time logging in, then you will not see this list. If the Open Maze folder is on the display, click to open it from there. If you do not see the Open Maze folder that you downloaded right in front of you, click the <b>Open</b> button at the top right corner of the window to open up a file search window. Navigate to the upzipped, downloaded, Open Maze folder and select it, clicking <b>Open</b> after doing so. </p>
+                        </li>
+                        <div class="row">
+                            <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>If you clicked <b>Open</b> and you see the following (or similar) error message, please press <b>Continue</b>.</p></div>
+                            </div>
+                            <div class="col-md-6"><img style="max-width: 80%" src="../img/ErrorUnity.png"></div>
                         </div>
+                        <br>
+                        <p>At this point, the Unity will begin loading the Open Maze software. This may take some time so please be patient with the process. </p>
+                        <div class="row">
+                            <div class="col-md-6"><img style="max-width: 100%" src="../img/unityFirstLoad.png"></div>
+                            <div class="col-md-6"><div style="height:100%; display: flex; flex-direction: column;justify-content: center;"><p>You should now have a screen that looks like the one to the left! At this point you are all set up to begin running your experiments! Please Continue scrolling and watch or read our tutorials to find out more about configuring your environments, building your own and discover the endless opportunities of Open Maze!</p></div>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div id="tutorials" class="card" style="margin-bottom: 20px">
+
+            <div class="card-body">
+                <div id="tut1" class="card-title" style="font-size: 25px">
+                    Tutorial 1: The Experiment Configuration File
+                </div>
+                <div class="card-text">
+                    <p>In this tutorial you'll learn how to configure your experiments with the OpenMaze Configuration file. If you still have any quesitons afterward, don't hesitate to contact us <a href="contact.html">here</a>.</p>
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMeEif-_lg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!-- Copy & Pasted from YouTube -->
+                        <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/xYkz0Ueg0L4" frameborder="0" allowfullscreen></iframe>-->
                     </div>
-                </ol>
-            </div>
-
-        </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
-
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 1: The Experiment Configuration File
-            </div>
-            <div class="card-text">
-                <p>In this tutorial you'll learn how to configure your experiments with the OpenMaze Configuration file. If you still have any quesitons afterward, don't hesitate to contact us <a href="contact.html">here</a>.</p>
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZvMeEif-_lg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <!-- Copy & Pasted from YouTube -->
-                    <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/xYkz0Ueg0L4" frameborder="0" allowfullscreen></iframe>-->
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
+        <br>
+        <div class="card" style="margin-bottom: 20px">
 
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 2: Image Trials
-            </div>
-            <div class="card-text">
-                <p>OpenMaze allows you to use any image file as a trial. This allows you to customize instruction screens and cues. In this tutorial you'll learn how easy it is to incorporate image trials into your experiment.</p>
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ED26ra-hORc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+                <div id="tut2" class="card-title" style="font-size: 25px">
+                    Tutorial 2: Image Trials
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
-
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 3: 3D Trial Design
-            </div>
-            <div class="card-text">
-                <p>OpenMaze makes it easy to create any number of customized trials. In this tutorial you'll see just how easily you can create new trials or make changes to preexisting trials.</p>
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KgI97nbEMb4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-text">
+                    <p>OpenMaze allows you to use any image file as a trial. This allows you to customize instruction screens and cues. In this tutorial you'll learn how easy it is to incorporate image trials into your experiment.</p>
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ED26ra-hORc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
+        <br>
+        <div class="card" style="margin-bottom: 20px">
 
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 4: Goal Objects
-            </div>
-            <div class="card-text">
-                <p>Learn how to place goal objects throughout your environments.
-                </p>
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rX8tvyR_AYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+                <div id="tut3" class="card-title" style="font-size: 25px">
+                    Tutorial 3: 3D Trial Design
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
-
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 5: Goal Classification and Quotas
-            </div>
-            <div class="card-text">
-                <!--<p>-->
-                <!--</p>-->
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxjLupAmKH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-text">
+                    <p>OpenMaze makes it easy to create any number of customized trials. In this tutorial you'll see just how easily you can create new trials or make changes to preexisting trials.</p>
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KgI97nbEMb4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
+        <br>
+        <div class="card" style="margin-bottom: 20px">
 
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Tutorial 6: Landmarks
-            </div>
-            <div class="card-text">
-                <!--<p>-->
-                <!--</p>-->
-                <br>
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y0WX80sP3f4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+                <div id="tut4" class="card-title" style="font-size: 25px">
+                    Tutorial 4: Goal Objects
                 </div>
-            </div>
-
-        </div>
-    </div>
-    <br>
-    <div class="card" style="margin-bottom: 20px">
-
-        <div class="card-body">
-            <div class="card-title" style="font-size: 25px">
-                Why is OpenMaze not working??
-            </div>
-            <div class="card-text">
-                <p>Are you getting error messages when you try to run your OpenMaze experiment? This tutorial will give you a quick and easy fix!
-                </p>
-                <br>
-                <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/_BujtqoypzA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-text">
+                    <p>Learn how to place goal objects throughout your environments.
+                    </p>
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rX8tvyR_AYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+        <br>
+        <div class="card" style="margin-bottom: 20px">
+
+            <div class="card-body">
+                <div id="tut5" class="card-title" style="font-size: 25px">
+                    Tutorial 5: Goal Classification and Quotas
+                </div>
+                <div class="card-text">
+                    <!--<p>-->
+                    <!--</p>-->
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxjLupAmKH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="card" style="margin-bottom: 20px">
+
+            <div class="card-body">
+                <div id="tut6" class="card-title" style="font-size: 25px">
+                    Tutorial 6: Landmarks
+                </div>
+                <div class="card-text">
+                    <!--<p>-->
+                    <!--</p>-->
+                    <br>
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/y0WX80sP3f4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="card" style="margin-bottom: 20px">
+
+            <div class="card-body">
+                <div id="troubleshooting" class="card-title" style="font-size: 25px">
+                    Why is OpenMaze not working??
+                </div>
+                <div class="card-text">
+                    <p>Are you getting error messages when you try to run your OpenMaze experiment? This tutorial will give you a quick and easy fix!
+                    </p>
+                    <br>
+                    <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/_BujtqoypzA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+    </div>
+    <div class="col-md-2">
+        <div class="sticky" style="position: fixed; top: 90px">
+            <ul id="navbar-example3" class="nav nav-pills default-pills smooth-scroll " data-allow-hashes="true">
+                <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#getStarted">Get Started</a></li>
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#unity">Unity</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#openMaze">Open Maze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sublime">Sublime</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#setup">Setup</a></li>
+                </ul>
+                
+                <li class="nav-item"><a class="nav-link" href="#tutorials">Tutorials</a></li>
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#tut1">The Configuration File</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tut2">Image Trials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tut3">3D Trial Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tut4">Goal Objects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tut5">Goal Classification and Quotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tut6">Landmarks</a></li>
+                </ul>
+                <li class="nav-item"><a class="nav-link" href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 <!--Footer-->
